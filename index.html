@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Shereen</title>
 
-    <link rel="icon" href="imglogo_icon.png" />
+    <link rel="icon" href="img/logo_icon.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -30,10 +30,16 @@
       <header>
         <nav class="nav">
           <a href="#" class="logo">
-            <img src="css/img/logo.png" alt="Shereen Logo" />
+            <img src="/css/img/logo.png" alt="Shereen Logo" />
           </a>
 
-          <div class="links">
+          <div class="links" id="links">
+            <a href="#" class="logo">
+              <img src="/css/img/logo.png" alt="Shereen Logo" />
+            </a>
+            <span onclick="open_close_Menu()" class="colse_menu"
+              ><i class="fa-solid fa-x"></i
+            ></span>
             <a class="active" href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Services</a>
@@ -45,6 +51,9 @@
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <span class="icon_menu" onclick="open_close_Menu()"
+              ><i class="fa-solid fa-bars"></i
+            ></span>
           </div>
         </nav>
       </header>
@@ -101,7 +110,7 @@
           </div>
 
           <div class="div_img">
-            <img src="/css/img/shereen.png" alt="Shereen" />
+            <img src="css/img/shereen.png" alt="Shereen" />
           </div>
         </div>
       </section>
@@ -226,12 +235,25 @@
             </div>
           </div>
 
-          <form action="">
+          <form
+            method="post"
+            action="https://api.sheetmonkey.io/form/bdkgZJzAukPeswTFtDyeoG"
+          >
             <div class="inputs_form">
-              <input type="text" placeholder="full name" />
-              <input type="text" placeholder="Email" />
-              <input type="text" placeholder="Mobile number" />
-              <input type="text" placeholder="Subject" />
+              <input type="text" placeholder="full name" name="name" required />
+              <input type="text" placeholder="Email" name="Email" required />
+              <input
+                type="text"
+                placeholder="Mobile number"
+                name="phone"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Subject"
+                name="Subject"
+                required
+              />
               <textarea
                 name=""
                 id=""
@@ -239,7 +261,7 @@
                 placeholder="Your massage Here......"
               ></textarea>
             </div>
-            <button class="btn">Send Message</button>
+            <button type="submit" class="btn">Send Message</button>
           </form>
         </div>
       </section>
@@ -248,4 +270,3 @@
     <script src="js/main.js"></script>
   </body>
 </html>
-

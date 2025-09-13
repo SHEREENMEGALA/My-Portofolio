@@ -8,3 +8,9 @@ window.onscroll = function () {
     header.classList.remove("active");
   }
 };
+
+let nav_links = document.getElementById("links");
+
+function open_close_Menu() {
+  nav_links.classList.toggle("active");
+}
